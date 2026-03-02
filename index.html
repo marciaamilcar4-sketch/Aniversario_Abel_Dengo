@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abel 31 Anos · Experiência Exclusiva · 09 Maio 2026</title>
+    <!-- Fontes Luxuosas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- QR Code -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #0a0a0a;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Background Animado Luxuoso */
+        .luxury-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .gold-particle {
+            position: absolute;
+            background: radial-gradient(circle, rgba(215,180,130,0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: floatParticle 20s infinite ease-in-out;
+        }
+
+        @keyframes floatParticle {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(100px, -50px) scale(1.2); }
+            50% { transform: translate(200px, 0) scale(0.8); }
+            75% { transform: translate(100px, 50px) scale(1.1); }
+        }
+
+        /* Container Principal */
+        .invitation-master {
+            position: relative;
+            z-index: 100;
+            width: 100%;
+            max-width: 1300px;
+            background: rgba(10, 8, 6, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(215, 180, 130, 0.25);
+            border-radius: 60px;
+            box-shadow: 0 40px 80px rgba(0,0,0,0.9), 0 0 0 1px rgba(215,180,130,0.2) inset, 0 0 40px rgba(215,180,130,0.2);
+            overflow: hidden;
+        }
+
+        /* Security Badge */
+        .security-premium {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background: rgba(215,180,130,0.03);
+            border-bottom: 1px solid rgba(215,180,130,0.15);
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .token-unique {
+            color: #b89e7c;
+            font-family: monospace;
+            background: rgba(215,180,130,0.1);
+            padding: 5px 15px;
+            border-radius: 40px;
+            border: 1px solid #d7b48230;
+        }
+
+        .token-unique i {
+            color: #d7b482;
+            margin-right: 8px;
+        }
+
+        .exclusive-tag {
+            color: #d7b482;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        /* Header Principal */
+        .hero-luxury {
+            padding: 40px 50px;
+            background: linear-gradient(145deg, #14100c, #0a0806);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-luxury::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(215,180,130,0.1) 0%, transparent 70%);
+            animation: rotate 30s linear infinite;
+        }
+
+        .hero-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .date-luxury {
+            text-align: center;
+        }
+
+        .day-luxury {
+            font-family: 'Playfair Display', serif;
+            font-size: 6rem;
+            font-weight: 800;
+            line-height: 0.9;
+            background: linear-gradient(135deg, #d7b482, #f5e6d3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 40px rgba(215,180,130,0.3);
+        }
+
+        .month-luxury {
+            font-size: 2rem;
+            letter-spacing: 15px;
+            color: #b89e7c;
+            margin-top: -10px;
+        }
+
+        .year-luxury {
+            font-size: 2.5rem;
+            color: #fff;
+            font-weight: 300;
+        }
+
+        .name-luxury {
+            text-align: right;
+        }
+
+        .name-luxury h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        .name-luxury h1 span {
+            color: #d7b482;
+            font-weight: 800;
+            position: relative;
+        }
+
+        .name-luxury h1 span::after {
+            content: '';
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #d7b482, transparent);
+        }
+
+        .age-luxury {
+            font-size: 1.2rem;
+            color: #b89e7c;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        /* Progress Bar Elegante */
+        .progress-elegant {
+            padding: 20px 50px;
+            background: rgba(0,0,0,0.4);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            border-bottom: 1px solid rgba(215,180,130,0.15);
+            border-top: 1px solid rgba(215,180,130,0.15);
+        }
+
+        .steps-luxury {
+            display: flex;
+            gap: 25px;
+        }
+
+        .step-circle {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: rgba(20,18,16,0.8);
+            border: 2px solid #3a352e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #b89e7c;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+        }
+
+        .step-circle.active {
+            border-color: #d7b482;
+            background: linear-gradient(135deg, #d7b48220, #b89e7c20);
+            color: #d7b482;
+            transform: scale(1.15);
+            box-shadow: 0 0 40px rgba(215,180,130,0.5);
+        }
+
+        .step-circle.completed {
+            background: #d7b482;
+            border-color: #d7b482;
+            color: #0a0a0a;
+        }
+
+        .guests-luxury {
+            display: flex;
+            gap: 20px;
+        }
+
+        .guest-chip {
+            background: rgba(215,180,130,0.08);
+            padding: 12px 25px;
+            border-radius: 50px;
+            border: 1px solid #d7b48240;
+            color: #fff;
+            font-weight: 500;
+            backdrop-filter: blur(5px);
+        }
+
+        .guest-chip i {
+            color: #d7b482;
+            margin-right: 10px;
+        }
+
+        /* Área de Páginas */
+        .pages-luxury {
+            padding: 50px;
+            min-height: 650px;
+        }
+
+        .page {
+            display: none;
+            animation: pageReveal 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        @keyframes pageReveal {
+            from {
+                opacity: 0;
+                transform: translateX(40px) scale(0.98);
+                filter: blur(5px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0) scale(1);
+                filter: blur(0);
+            }
+        }
+
+        /* Card Premium */
+        .card-premium {
+            background: rgba(18, 15, 12, 0.7);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(215, 180, 130, 0.2);
+            border-radius: 50px;
+            padding: 45px;
+            box-shadow: 0 30px 60px -30px #000, 0 0 0 1px rgba(215,180,130,0.1) inset;
+        }
+
+        .title-premium {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 35px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .title-premium i {
+            color: #d7b482;
+            font-size: 2.5rem;
+            background: rgba(215,180,130,0.1);
+            padding: 15px;
+            border-radius: 50%;
+            border: 1px solid #d7b482;
+        }
+
+        .title-premium span {
+            background: linear-gradient(135deg, #d7b482, #f5e6d3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Mensagem de Boas-Vindas */
+        .message-emoji {
+            background: linear-gradient(145deg, #1a1713, #0f0d0b);
+            border-left: 8px solid #d7b482;
+            border-radius: 40px;
+            padding: 35px 45px;
+            margin-bottom: 40px;
+            position: relative;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: #e5d9cc;
+            font-style: italic;
+            box-shadow: 0 20px 40px -20px #d7b482;
+        }
+
+        .message-emoji i {
+            color: #d7b482;
+            font-size: 2rem;
+            margin: 0 15px;
+        }
+
+        .quote-left {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 4rem;
+            color: rgba(215,180,130,0.1);
+        }
+
+        .quote-right {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 4rem;
+            color: rgba(215,180,130,0.1);
+        }
+
+        /* Grid de Nomes */
+        .names-grid-luxury {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .input-luxury {
+            width: 100%;
+        }
+
+        .input-luxury label {
+            display: block;
+            color: #b89e7c;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .input-luxury input, .input-luxury textarea, .input-luxury select {
+            width: 100%;
+            padding: 18px 25px;
+            background: rgba(0,0,0,0.4);
+            border: 2px solid rgba(215,180,130,0.2);
+            border-radius: 60px;
+            color: #fff;
+            font-size: 1.1rem;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .input-luxury input:focus, .input-luxury textarea:focus, .input-luxury select:focus {
+            border-color: #d7b482;
+            box-shadow: 0 0 30px rgba(215,180,130,0.2);
+        }
+
+        .input-luxury textarea {
+            border-radius: 30px;
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .input-luxury select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d7b482'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 20px center;
+            background-size: 20px;
+        }
+
+        /* Botão Maps */
+        .maps-luxury {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: #0a0a0a;
+            padding: 18px 40px;
+            border-radius: 60px;
+            color: #fff;
+            text-decoration: none;
+            border: 2px solid #d7b482;
+            margin: 30px 0;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .maps-luxury:hover {
+            background: #d7b482;
+            color: #0a0a0a;
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px -15px #d7b482;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: rgba(215,180,130,0.05);
+            border: 1px solid #d7b48230;
+            border-radius: 40px;
+            padding: 30px;
+            margin: 30px 0;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #e5d9cc;
+        }
+
+        .info-box i {
+            color: #d7b482;
+            margin-right: 15px;
+            font-size: 1.3rem;
+        }
+
+        .info-box-title {
+            color: #d7b482;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Grid de Bebidas - Múltipla Seleção */
+        .bebidas-grid-luxury {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+            max-height: 400px;
+            overflow-y: auto;
+            padding: 10px 5px;
+            scrollbar-width: thin;
+            scrollbar-color: #d7b482 #1a1713;
+        }
+
+        .bebidas-grid-luxury::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .bebidas-grid-luxury::-webkit-scrollbar-track {
+            background: #1a1713;
+            border-radius: 10px;
+        }
+
+        .bebidas-grid-luxury::-webkit-scrollbar-thumb {
+            background: #d7b482;
+            border-radius: 10px;
+        }
+
+        .bebida-item-luxury {
+            background: rgba(20, 18, 16, 0.8);
+            border: 2px solid rgba(215,180,130,0.15);
+            border-radius: 35px;
+            padding: 25px 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bebida-item-luxury::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(215,180,130,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .bebida-item-luxury:hover::before {
+            left: 100%;
+        }
+
+        .bebida-item-luxury:hover {
+            transform: translateY(-5px);
+            border-color: #d7b482;
+            box-shadow: 0 20px 30px -15px #d7b482;
+        }
+
+        .bebida-item-luxury.selected {
+            border-color: #d7b482;
+            background: linear-gradient(145deg, rgba(215,180,130,0.15), rgba(20,18,16,0.9));
+            box-shadow: 0 0 30px rgba(215,180,130,0.2);
+        }
+
+        .bebida-item-luxury i {
+            font-size: 2.5rem;
+            color: #d7b482;
+            margin-bottom: 10px;
+        }
+
+        .bebida-item-luxury h3 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .selected-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #d7b482;
+            color: #0a0a0a;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 700;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .bebida-item-luxury.selected .selected-badge {
+            opacity: 1;
+        }
+
+        /* Itens Selecionados */
+        .selected-items-panel {
+            background: rgba(0,0,0,0.5);
+            border-radius: 40px;
+            padding: 30px;
+            margin: 30px 0;
+            border: 1px solid #d7b48230;
+        }
+
+        .selected-item-card {
+            background: rgba(215,180,130,0.08);
+            border-radius: 30px;
+            padding: 18px 25px;
+            margin: 12px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-left: 5px solid #d7b482;
+            animation: slideItem 0.3s ease;
+        }
+
+        @keyframes slideItem {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .item-info {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex: 1;
+        }
+
+        .item-info i {
+            color: #d7b482;
+            font-size: 1.5rem;
+        }
+
+        .item-details {
+            color: #fff;
+            flex: 1;
+        }
+
+        .item-details strong {
+            color: #d7b482;
+            font-size: 1.1rem;
+            display: block;
+        }
+
+        .item-details small {
+            color: #b89e7c;
+            font-size: 0.9rem;
+        }
+
+        .item-remove {
+            color: #b89e7c;
+            cursor: pointer;
+            font-size: 1.3rem;
+            transition: color 0.2s;
+        }
+
+        .item-remove:hover {
+            color: #ff6b6b;
+        }
+
+        .qty-luxury {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: rgba(0,0,0,0.5);
+            border-radius: 60px;
+            padding: 15px 30px;
+            margin: 20px 0;
+        }
+
+        .qty-btn-luxury {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: transparent;
+            border: 2px solid #d7b482;
+            color: #d7b482;
+            font-size: 1.8rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .qty-btn-luxury:hover {
+            background: #d7b482;
+            color: #0a0a0a;
+        }
+
+        .qty-input-luxury {
+            width: 70px;
+            text-align: center;
+            font-size: 2rem;
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        /* Áreas Grid */
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .area-card {
+            background: rgba(20, 18, 16, 0.8);
+            border: 2px solid rgba(215,180,130,0.15);
+            border-radius: 40px;
+            padding: 30px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .area-card:hover {
+            border-color: #d7b482;
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px -15px #d7b482;
+        }
+
+        .area-card.selected {
+            border-color: #d7b482;
+            background: linear-gradient(145deg, rgba(215,180,130,0.15), rgba(20,18,16,0.9));
+        }
+
+        .area-card i {
+            font-size: 2.5rem;
+            color: #d7b482;
+            margin-bottom: 15px;
+        }
+
+        .area-card h3 {
+            color: #fff;
+            font-size: 1.1rem;
+        }
+
+        /* Titular */
+        .titular-block {
+            background: linear-gradient(145deg, #1f1b16, #12100d);
+            border: 2px solid #d7b482;
+            border-radius: 40px;
+            padding: 25px;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .titular-block::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(215,180,130,0.2), transparent);
+            border-radius: 50%;
+        }
+
+        .titular-block h3 {
+            color: #d7b482;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .titular-block p {
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Mensagem Presentes */
+        .presentes-message {
+            background: linear-gradient(145deg, #2a231c, #1a1713);
+            border-radius: 50px;
+            padding: 40px;
+            margin: 30px 0;
+            border: 2px solid #d7b482;
+            font-size: 1.2rem;
+            line-height: 2;
+            color: #f0e5d8;
+            text-align: center;
+            position: relative;
+        }
+
+        .presentes-message i {
+            color: #d7b482;
+            font-size: 2rem;
+            margin: 0 15px;
+        }
+
+        .presentes-message strong {
+            color: #d7b482;
+            font-size: 1.4rem;
+        }
+
+        /* Pagamento Detalhes */
+        .payment-details-luxury {
+            background: linear-gradient(145deg, #1a1713, #0f0d0b);
+            border-radius: 40px;
+            padding: 35px;
+            margin: 30px 0;
+            border: 2px solid #d7b482;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 20px rgba(215,180,130,0.2); }
+            to { box-shadow: 0 0 40px rgba(215,180,130,0.4); }
+        }
+
+        .payment-info-card {
+            background: rgba(0,0,0,0.4);
+            border-radius: 30px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 6px solid #d7b482;
+        }
+
+        .payment-info-card p {
+            color: #fff;
+            margin: 15px 0;
+            font-size: 1.2rem;
+            word-break: break-all;
+        }
+
+        .payment-info-card i {
+            color: #d7b482;
+            width: 35px;
+        }
+
+        .btn-confirm-payment {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            border: none;
+            color: #fff;
+            font-size: 1.3rem;
+            padding: 20px;
+            border-radius: 60px;
+            width: 100%;
+            font-weight: 700;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .btn-confirm-payment:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 40px -10px #25D366;
+        }
+
+        /* Resumo Final */
+        .resumo-premium {
+            background: linear-gradient(145deg, #1a1713, #0f0d0b);
+            border-radius: 50px;
+            padding: 40px;
+            margin: 30px 0;
+            border: 3px solid #d7b482;
+        }
+
+        .resumo-linha {
+            display: flex;
+            justify-content: space-between;
+            padding: 18px 0;
+            border-bottom: 1px solid #d7b48230;
+            color: #fff;
+            font-size: 1.2rem;
+        }
+
+        .resumo-linha:last-child {
+            border-bottom: none;
+        }
+
+        .resumo-total-premium {
+            font-size: 2rem;
+            color: #d7b482;
+            font-weight: 800;
+            text-align: right;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 3px solid #d7b482;
+        }
+
+        /* Códigos */
+        .codigos-duplo {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .codigo-single {
+            background: linear-gradient(145deg, #1f1b16, #12100d);
+            border: 4px solid #d7b482;
+            border-radius: 40px;
+            padding: 35px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .codigo-single::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(215,180,130,0.1), transparent);
+            animation: rotate 8s linear infinite;
+        }
+
+        .codigo-nome {
+            font-size: 1.5rem;
+            color: #d7b482;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .codigo-numero {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: 8px;
+            color: #fff;
+            position: relative;
+        }
+
+        /* Botões */
+        .nav-buttons-luxury {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            gap: 20px;
+        }
+
+        .btn-luxury {
+            padding: 18px 40px;
+            border-radius: 60px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid rgba(215,180,130,0.3);
+            background: transparent;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .btn-luxury-primary {
+            background: linear-gradient(135deg, #d7b482, #b89e7c);
+            border: none;
+            color: #0a0a0a;
+        }
+
+        .btn-luxury-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px -15px #d7b482;
+        }
+
+        .footer-luxury {
+            padding: 25px 50px;
+            border-top: 1px solid rgba(215,180,130,0.1);
+            display: flex;
+            justify-content: space-between;
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+           
+            .name-luxury {
+                text-align: center;
+            }
+           
+            .names-grid-luxury {
+                grid-template-columns: 1fr;
+            }
+           
+            .codigos-duplo {
+                grid-template-columns: 1fr;
+            }
+           
+            .pages-luxury {
+                padding: 25px;
+            }
+           
+            .areas-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="luxury-bg" id="luxuryBg"></div>
+
+    <div class="invitation-master">
+        <!-- Security Token -->
+        <div class="security-premium">
+            <div class="token-unique">
+                <i class="fas fa-shield-alt"></i> TOKEN: <span id="tokenDisplay">CARREGANDO...</span>
+            </div>
+            <div class="exclusive-tag">
+                <i class="fas fa-crown"></i> EXCLUSIVO · 2 PESSOAS
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero-luxury">
+            <div class="hero-content">
+                <div class="date-luxury">
+                    <div class="day-luxury">09</div>
+                    <div class="month-luxury">MAIO</div>
+                    <div class="year-luxury">2026</div>
+                </div>
+                <div class="name-luxury">
+                    <h1><span>ABEL</span> 31</h1>
+                    <div class="age-luxury">ALL WHITE · CASUAL</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Steps -->
+        <div class="progress-elegant">
+            <div class="steps-luxury">
+                <div class="step-circle active" id="step1">1</div>
+                <div class="step-circle" id="step2">2</div>
+                <div class="step-circle" id="step3">3</div>
+                <div class="step-circle" id="step4">4</div>
+            </div>
+            <div class="guests-luxury">
+                <span class="guest-chip"><i class="fas fa-user"></i> <span id="nomePrincipalDisplay">Convidado 1</span></span>
+                <span class="guest-chip"><i class="fas fa-user-friends"></i> <span id="nomeAcompanhanteDisplay">Convidado 2</span></span>
+            </div>
+        </div>
+
+        <!-- Pages Area -->
+        <div class="pages-luxury">
+            <!-- PAGE 1 - Welcome & Nomes -->
+            <div class="page active" id="page1">
+                <div class="card-premium">
+                    <div class="message-emoji">
+                        <i class="fas fa-quote-left quote-left"></i>
+                        <i class="fas fa-star"></i> É com muito carinho que recebe este convite, e se recebeu saiba que faz parte da minha história e que merece a minha consideração.
+                        <br><br>
+                        <strong>O igual espero de ti.</strong>
+                        <i class="fas fa-quote-right quote-right"></i>
+                    </div>
+
+                    <div class="title-premium">
+                        <i class="fas fa-users"></i>
+                        <span>Quem fará parte desta história?</span>
+                    </div>
+
+                    <div class="names-grid-luxury">
+                        <div class="input-luxury">
+                            <label><i class="fas fa-crown"></i> CONVIDADO PRINCIPAL</label>
+                            <input type="text" id="nomePrincipal" placeholder="Seu nome completo">
+                        </div>
+                        <div class="input-luxury">
+                            <label><i class="fas fa-heart"></i> ACOMPANHANTE</label>
+                            <input type="text" id="nomeAcompanhante" placeholder="Nome do acompanhante">
+                        </div>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <a href="#" class="maps-luxury" id="mapsLink" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            LOCALIZAÇÃO · DIRECRS
+                        </a>
+                    </div>
+
+                    <div class="nav-buttons-luxury">
+                        <div></div>
+                        <button class="btn-luxury btn-luxury-primary" onclick="nextPage()">
+                            INICIAR EXPERIÊNCIA <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGE 2 - Bebidas e Áreas -->
+            <div class="page" id="page2">
+                <div class="card-premium">
+                    <div class="title-premium">
+                        <i class="fas fa-wine-bottle"></i>
+                        <span>Vossos Consumos & Ambiente</span>
+                    </div>
+
+                    <!-- Info Box - Explicação -->
+                    <div class="info-box">
+                        <div class="info-box-title">
+                            <i class="fas fa-info-circle"></i> INFORMAÇÕES IMPORTANTES
+                        </div>
+                        <p><i class="fas fa-check"></i> Você encontrará o que consome no evento e a sua zona de preferência.</p>
+                        <p><i class="fas fa-check"></i> A escolha da quantidade da sua bebida e do seu parceiro/acompanhante será consumida durante o evento.</p>
+                    </div>
+
+                    <h3 style="color: #d7b482; margin: 30px 0 20px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-cocktail"></i> SELECIONEM SUAS BEBIDAS
+                    </h3>
+
+                    <div class="bebidas-grid-luxury" id="bebidasGrid">
+                        <!-- Gerado via JS -->
+                    </div>
+
+                    <!-- Itens Selecionados -->
+                    <div class="selected-items-panel" id="selectedItemsPanel">
+                        <h4 style="color: #d7b482; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-shopping-basket"></i> ITENS SELECIONADOS
+                        </h4>
+                        <div id="itensSelecionadosLista"></div>
+                        <div id="nenhumItemMsg" style="color: #666; text-align: center; padding: 20px;">
+                            Nenhuma bebida selecionada ainda
+                        </div>
+                    </div>
+
+                    <!-- Controle de Quantidade -->
+                    <div class="qty-luxury" id="qtyControl" style="display: none;">
+                        <button class="qty-btn-luxury" onclick="alterarQtd(-1)">-</button>
+                        <input type="text" class="qty-input-luxury" id="quantidade" value="1" readonly>
+                        <button class="qty-btn-luxury" onclick="alterarQtd(1)">+</button>
+                        <input type="text" class="input-luxury" style="flex: 2;" id="referencia" placeholder="REFERÊNCIA (ex: Jack Daniels, Moet)">
+                        <button class="btn-luxury btn-luxury-primary" onclick="confirmarQuantidade()">
+                            <i class="fas fa-check"></i> ADICIONAR
+                        </button>
+                    </div>
+
+                    <!-- Áreas da Celebração -->
+                    <h3 style="color: #d7b482; margin: 40px 0 20px; display: flex; align-items: center; gap: 10px;">
+                        <i class="fas fa-map-marked-alt"></i> ESCOLHAM VOSSA ZONA
+                    </h3>
+
+                    <p style="color: #b89e7c; margin-bottom: 20px;">A celebração contará com ambientes diversificados, de modo que cada um de nós esteja confortável e acolhido.</p>
+
+                    <div class="areas-grid" id="areasGrid">
+                        <div class="area-card" data-area="Lounge Sereno">
+                            <i class="fas fa-couch"></i>
+                            <h3>Lounge Sereno</h3>
+                        </div>
+                        <div class="area-card" data-area="Área de Convívio & Networking">
+                            <i class="fas fa-handshake"></i>
+                            <h3>Convívio & Networking</h3>
+                        </div>
+                        <div class="area-card" data-area="Lounge Exclusivo">
+                            <i class="fas fa-star"></i>
+                            <h3>Lounge Exclusivo</h3>
+                        </div>
+                        <div class="area-card" data-area="Lounge Sénior">
+                            <i class="fas fa-glass-cheers"></i>
+                            <h3>Lounge Sénior</h3>
+                        </div>
+                        <div class="area-card" data-area="Espaço de Entretenimento">
+                            <i class="fas fa-gamepad"></i>
+                            <h3>Espaço de Entretenimento</h3>
+                        </div>
+                    </div>
+
+                    <div class="nav-buttons-luxury">
+                        <button class="btn-luxury" onclick="prevPage()"><i class="fas fa-arrow-left"></i> VOLTAR</button>
+                        <button class="btn-luxury btn-luxury-primary" onclick="nextPage()">
+                            AVANÇAR <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGE 3 - Presentes -->
+            <div class="page" id="page3">
+                <div class="card-premium">
+                    <div class="title-premium">
+                        <i class="fas fa-gift"></i>
+                        <span>Presentes</span>
+                    </div>
+
+                    <!-- Mensagem Emocional sobre Presentes -->
+                    <div class="presentes-message">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Dependendo do amor que você sente por mim, e o merecimento em estar a degraus tar desse momento especial junto de mim e com pessoas que eu amo...</p>
+                        <br>
+                        <p><strong>Estimado Convidado,</strong> a sua presença é importante para mim, esse convite é exclusivo e não é transmissível. Caso falte, que seja por motivo de maior relevância, e, a sua ausência não significa que pode ser substituída pelo seu presente, porque tu és mais importante para mim <i class="fas fa-heart" style="color: #d7b482;"></i></p>
+                        <br>
+                        <p>Porém <strong>ambas partes são importantes para mim.</strong> Por favor selecione o seu presente.</p>
+                        <p style="margin-top: 20px;"><strong>Obrigado! Espero por você.</strong></p>
+                        <i class="fas fa-quote-right" style="float: right;"></i>
+                    </div>
+
+                    <div class="titular-block">
+                        <h3><i class="fas fa-user-check"></i> TITULAR DAS CONTAS</h3>
+                        <p>Abel Alfredo Dengo Junior</p>
+                    </div>
+
+                    <div class="bebidas-grid-luxury">
+                        <button class="bebida-item-luxury" onclick="selecionarValor(5000000)">5.000.000 MT</button>
+                        <button class="bebida-item-luxury" onclick="selecionarValor(10000000)">10.000.000 MT</button>
+                        <button class="bebida-item-luxury" onclick="selecionarValor(15000000)">15.000.000 MT</button>
+                        <button class="bebida-item-luxury" onclick="selecionarValor(30000000)">30.000.000 MT</button>
+                        <button class="bebida-item-luxury" onclick="selecionarValor(80000000)">80.000.000 MT</button>
+                        <button class="bebida-item-luxury" onclick="selecionarValor(100000000)">100.000.000 MT</button>
+                        <button class="bebida-item-luxury" onclick="selecionarValor(200000000)">200.000.000 MT</button>
+                        <button class="bebida-item-luxury" onclick="selecionarValor(300000000)">300.000.000 MT</button>
+                        <button class="bebida-item-luxury" onclick="selecionarValor(500000000)">500.000.000 MT</button>
+                    </div>
+
+                    <div class="input-luxury" style="margin: 30px 0;">
+                        <input type="number" id="valorPersonalizado" placeholder="OUTRO VALOR (mín. 5.000 MT)" min="5000000">
+                    </div>
+
+                    <h3 style="color: #d7b482; margin: 40px 0 25px; text-align: center;">FORMA DE PAGAMENTO</h3>
+
+                    <div class="bebidas-grid-luxury">
+                        <button class="bebida-item-luxury" onclick="mostrarDetalhesPagamento('M-Pesa', '843795522')">
+                            <i class="fas fa-mobile-alt"></i> M-Pesa
+                        </button>
+                        <button class="bebida-item-luxury" onclick="mostrarDetalhesPagamento('eMola', '873795522')">
+                            <i class="fas fa-wifi"></i> eMola
+                        </button>
+                        <button class="bebida-item-luxury" onclick="mostrarDetalhesPagamento('Visa', null, true)">
+                            <i class="fab fa-cc-visa"></i> Visa
+                        </button>
+                        <button class="bebida-item-luxury" onclick="mostrarDetalhesPagamento('Cash', null)">
+                            <i class="fas fa-money-bill"></i> Cash
+                        </button>
+                    </div>
+
+                    <!-- Detalhes do Pagamento -->
+                    <div id="pagamentoDetalhes" class="payment-details-luxury" style="display: none;">
+                        <h4 style="color: #d7b482; text-align: center; margin-bottom: 20px;">
+                            <i class="fas fa-lock"></i> DADOS PARA TRANSFERÊNCIA
+                        </h4>
+                        <div id="detalhesConteudo"></div>
+                       
+                        <div id="qrContainer" style="display: flex; justify-content: center; margin: 30px 0;"></div>
+                       
+                        <!-- BOTÃO OBRIGATÓRIO DE CONFIRMAÇÃO -->
+                        <button class="btn-confirm-payment" onclick="confirmarPagamentoEAvancar()">
+                            <i class="fab fa-whatsapp"></i> CONFIRMAR PAGAMENTO
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="nav-buttons-luxury">
+                        <button class="btn-luxury" onclick="prevPage()"><i class="fas fa-arrow-left"></i> VOLTAR</button>
+                        <button class="btn-luxury btn-luxury-primary" onclick="nextPage()">
+                            PULAR <i class="fas fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PAGE 4 - MEU RESUMO + Códigos -->
+            <div class="page" id="page4">
+                <div class="card-premium">
+                    <div class="title-premium">
+                        <i class="fas fa-clipboard-list"></i>
+                        <span>MEU RESUMO EXCLUSIVO</span>
+                    </div>
+
+                    <div class="resumo-premium">
+                        <div class="resumo-linha">
+                            <span><i class="fas fa-user"></i> Convidado:</span>
+                            <span id="resumoPrincipal">-</span>
+                        </div>
+                        <div class="resumo-linha">
+                            <span><i class="fas fa-user-friends"></i> Acompanhante:</span>
+                            <span id="resumoAcompanhante">-</span>
+                        </div>
+                        <div class="resumo-linha">
+                            <span><i class="fas fa-map-marker-alt"></i> Zona:</span>
+                            <span id="resumoZona">-</span>
+                        </div>
+                       
+                        <h4 style="color: #d7b482; margin: 30px 0 20px;">
+                            <i class="fas fa-wine-bottle"></i> CONSUMOS
+                        </h4>
+                        <div id="resumoConsumos"></div>
+                       
+                        <div class="resumo-linha" style="margin-top: 20px;">
+                            <span><i class="fas fa-gift"></i> Presente:</span>
+                            <span id="resumoPresente">-</span>
+                        </div>
+                        <div class="resumo-linha">
+                            <span><i class="fas fa-credit-card"></i> Pagamento:</span>
+                            <span id="resumoPagamento">-</span>
+                        </div>
+                    </div>
+
+                    <!-- Códigos de Acesso -->
+                    <div class="codigos-duplo" id="codigosContainer"></div>
+
+                    <div style="text-align: center; margin: 30px 0;">
+                        <i class="fas fa-check-circle" style="color: #d7b482; font-size: 5rem;"></i>
+                        <p style="color: #fff; margin: 20px 0; font-size: 1.3rem;">
+                            CADASTRO CONFIRMADO!
+                        </p>
+                        <p style="color: #b89e7c;">Apresentem os códigos acima na entrada</p>
+                    </div>
+
+                    <button class="btn-luxury btn-luxury-primary" style="margin: 20px auto; display: block;" onclick="exportarDados()">
+                        <i class="fas fa-file-excel"></i> EXPORTAR DADOS
+                    </button>
+
+                    <div class="nav-buttons-luxury">
+                        <button class="btn-luxury" onclick="reiniciar()"><i class="fas fa-redo"></i> NOVO</button>
+                        <button class="btn-luxury btn-luxury-primary" onclick="window.print()">
+                            <i class="fas fa-download"></i> SALVAR
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-luxury">
+            <span><i class="far fa-clock"></i> 20H · 09 MAIO 2026</span>
+            <span><i class="fas fa-tshirt"></i> ALL WHITE CASUAL</span>
+            <span><i class="fas fa-ticket"></i> VÁLIDO PARA 2 PESSOAS</span>
+        </div>
+    </div>
+
+    <script>
+        // ========== CONFIGURAÇÕES ==========
+        const TITULAR = 'Abel Alfredo Dengo Junior';
+        const BEBIDAS = [
+            { nome: 'Whisky', icone: 'fa-whiskey-glass' },
+            { nome: 'Champanhe', icone: 'fa-champagne-glasses' },
+            { nome: 'Vinho Tinto', icone: 'fa-wine-glass' },
+            { nome: 'Vinho Branco', icone: 'fa-wine-glass-alt' },
+            { nome: 'Cerveja', icone: 'fa-beer' },
+            { nome: 'Drinks', icone: 'fa-cocktail' },
+            { nome: 'Refrigerante', icone: 'fa-bottle-water' },
+            { nome: 'Água', icone: 'fa-water' },
+            { nome: 'Energético', icone: 'fa-bolt' },
+            { nome: 'Licor', icone: 'fa-glass-martini' },
+            { nome: 'Gin', icone: 'fa-glass-whiskey' },
+            { nome: 'Vodka', icone: 'fa-flask' },
+            { nome: 'Rum', icone: 'fa-skull' },
+            { nome: 'Tequila', icone: 'fa-hat-cowboy' },
+            { nome: 'Sangria', icone: 'fa-wine-bottle' }
+        ];
+
+        // ========== ESTADO ==========
+        let currentPage = 1;
+        let bebidasSelecionadas = []; // { nome, quantidade, referencia, icone }
+        let bebidaAtual = '';
+        let quantidadeAtual = 1;
+        let referenciaAtual = '';
+        let zonaSelecionada = '';
+        let valorPresente = 0;
+        let meioPagamento = '';
+        let codigosGerados = { principal: '', acompanhante: '' };
+
+        // Elementos
+        const pages = document.querySelectorAll('.page');
+        const steps = document.querySelectorAll('.step-circle');
+        const nomePrincipalInput = document.getElementById('nomePrincipal');
+        const nomeAcompanhanteInput = document.getElementById('nomeAcompanhante');
+        const nomePrincipalDisplay = document.getElementById('nomePrincipalDisplay');
+        const nomeAcompanhanteDisplay = document.getElementById('nomeAcompanhanteDisplay');
+
+        // ========== INICIALIZAÇÃO ==========
+        function init() {
+            gerarToken();
+            carregarBebidas();
+            carregarAreas();
+            verificarAcesso();
+            atualizarNomesDisplay();
+        }
+
+        function gerarToken() {
+            const token = 'ABEL-' + Math.random().toString(36).substring(2, 12).toUpperCase();
+            document.getElementById('tokenDisplay').textContent = token;
+            localStorage.setItem('convite_token', token);
+        }
+
+        function verificarAcesso() {
+            const acessos = JSON.parse(localStorage.getItem('convite_acessos') || '[]');
+            const dispositivo = navigator.userAgent + navigator.language;
+           
+            if (!acessos.includes(dispositivo)) {
+                acessos.push(dispositivo);
+                localStorage.setItem('convite_acessos', JSON.stringify(acessos));
+            }
+           
+            if (acessos.length > 3) {
+                alert('Este convite foi acessado em muitos dispositivos. Contate o anfitrião.');
+            }
+        }
+
+        function carregarBebidas() {
+            const grid = document.getElementById('bebidasGrid');
+            grid.innerHTML = '';
+           
+            BEBIDAS.forEach(b => {
+                const card = document.createElement('div');
+                card.className = 'bebida-item-luxury';
+                card.dataset.nome = b.nome;
+                card.dataset.icone = b.icone;
+                card.innerHTML = `
+                    <i class="fas ${b.icone}"></i>
+                    <h3>${b.nome}</h3>
+                    <div class="selected-badge"><i class="fas fa-check"></i></div>
+                `;
+                card.onclick = () => selecionarBebida(b.nome, b.icone);
+                grid.appendChild(card);
+            });
+        }
+
+        function carregarAreas() {
+            document.querySelectorAll('.area-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    document.querySelectorAll('.area-card').forEach(c => c.classList.remove('selected'));
+                    this.classList.add('selected');
+                    zonaSelecionada = this.dataset.area;
+                });
+            });
+        }
+
+        // ========== PÁGINA 1 ==========
+        nomePrincipalInput.addEventListener('input', atualizarNomesDisplay);
+        nomeAcompanhanteInput.addEventListener('input', atualizarNomesDisplay);
+
+        function atualizarNomesDisplay() {
+            nomePrincipalDisplay.textContent = nomePrincipalInput.value || 'Convidado 1';
+            nomeAcompanhanteDisplay.textContent = nomeAcompanhanteInput.value || 'Convidado 2';
+        }
+
+        // ========== PÁGINA 2 ==========
+        function selecionarBebida(nome, icone) {
+            bebidaAtual = nome;
+            document.getElementById('qtyControl').style.display = 'flex';
+           
+            // Highlight visual
+            document.querySelectorAll('.bebida-item-luxury').forEach(c => {
+                c.classList.remove('selected');
+                if (c.dataset.nome === nome) c.classList.add('selected');
+            });
+        }
+
+        function alterarQtd(delta) {
+            const input = document.getElementById('quantidade');
+            let val = parseInt(input.value) + delta;
+            if (val < 1) val = 1;
+            if (val > 50) val = 50;
+            input.value = val;
+            quantidadeAtual = val;
+        }
+
+        function confirmarQuantidade() {
+            if (!bebidaAtual) return;
+           
+            const referencia = document.getElementById('referencia').value;
+            if (!referencia) {
+                alert('Por favor, indique a referência/marca da bebida');
+                return;
+            }
+           
+            const bebida = BEBIDAS.find(b => b.nome === bebidaAtual);
+            bebidasSelecionadas.push({
+                nome: bebida.nome,
+                quantidade: quantidadeAtual,
+                referencia: referencia,
+                icone: bebida.icone
+            });
+           
+            atualizarListaItens();
+           
+            // Reset
+            bebidaAtual = '';
+            document.getElementById('qtyControl').style.display = 'none';
+            document.getElementById('quantidade').value = '1';
+            document.getElementById('referencia').value = '';
+            document.querySelectorAll('.bebida-item-luxury').forEach(c => c.classList.remove('selected'));
+        }
+
+        function atualizarListaItens() {
+            const lista = document.getElementById('itensSelecionadosLista');
+            const msg = document.getElementById('nenhumItemMsg');
+           
+            if (bebidasSelecionadas.length === 0) {
+                msg.style.display = 'block';
+                lista.innerHTML = '';
+                return;
+            }
+           
+            msg.style.display = 'none';
+            lista.innerHTML = '';
+           
+            bebidasSelecionadas.forEach((item, index) => {
+                lista.innerHTML += `
+                    <div class="selected-item-card">
+                        <div class="item-info">
+                            <i class="fas ${item.icone}"></i>
+                            <div class="item-details">
+                                <strong>${item.nome}</strong>
+                                <small>${item.quantidade}x · ${item.referencia}</small>
+                            </div>
+                        </div>
+                        <i class="fas fa-times item-remove" onclick="removerItem(${index})"></i>
+                    </div>
+                `;
+            });
+        }
+
+        function removerItem(index) {
+            bebidasSelecionadas.splice(index, 1);
+            atualizarListaItens();
+        }
+
+        // ========== PÁGINA 3 ==========
+        function selecionarValor(valor) {
+            valorPresente = valor;
+            document.querySelectorAll('.bebida-item-luxury').forEach(c => c.classList.remove('selected'));
+            event.target.classList.add('selected');
+        }
+
+        document.getElementById('valorPersonalizado').addEventListener('input', function() {
+            const val = parseFloat(this.value);
+            if (val >= 5000000) {
+                valorPresente = val;
+            }
+        });
+
+        function mostrarDetalhesPagamento(meio, numero, isVisa = false) {
+            meioPagamento = meio;
+            const detalhesDiv = document.getElementById('pagamentoDetalhes');
+            const conteudo = document.getElementById('detalhesConteudo');
+            const qrDiv = document.getElementById('qrContainer');
+           
+            detalhesDiv.style.display = 'block';
+           
+            if (isVisa) {
+                conteudo.innerHTML = `
+                    <div class="payment-info-card">
+                        <p><i class="fas fa-credit-card"></i> <strong>Conta:</strong> 0992099317</p>
+                        <p><i class="fas fa-globe"></i> <strong>IBAN:</strong> MZ59000100000099209931757</p>
+                        <p><i class="fas fa-barcode"></i> <strong>NIB:</strong> 000100000099209931757</p>
+                        <p><i class="fas fa-user"></i> <strong>Titular:</strong> ${TITULAR}</p>
+                    </div>
+                `;
+                qrDiv.innerHTML = '';
+                new QRCode(qrDiv, {
+                    text: 'MZ59000100000099209931757',
+                    width: 200,
+                    height: 200
+                });
+            } else {
+                conteudo.innerHTML = `
+                    <div class="payment-info-card">
+                        <p><i class="fas fa-mobile-alt"></i> <strong>Número:</strong> ${numero}</p>
+                        <p><i class="fas fa-user"></i> <strong>Titular:</strong> ${TITULAR}</p>
+                    </div>
+                `;
+                qrDiv.innerHTML = '';
+            }
+           
+            document.querySelectorAll('.bebida-item-luxury').forEach(c => c.classList.remove('selected'));
+            event.target.classList.add('selected');
+        }
+
+        function confirmarPagamentoEAvancar() {
+            if (!meioPagamento) {
+                alert('Selecione um meio de pagamento!');
+                return;
+            }
+           
+            if (valorPresente < 5000000) {
+                alert('Defina o valor do presente (mín. 5.000 MT)!');
+                return;
+            }
+           
+            // Simular envio WhatsApp
+            const mensagem = `Olá! Confirmação de pagamento via ${meioPagamento} no valor de ${valorPresente} MT. Aguardo confirmação.`;
+            window.open(`https://wa.me/258843795522?text=${encodeURIComponent(mensagem)}`, '_blank');
+           
+            // Avançar para resumo
+            setTimeout(() => {
+                currentPage = 4;
+                updatePage();
+                gerarCodigos();
+                atualizarResumo();
+            }, 1000);
+        }
+
+        // ========== PÁGINA 4 ==========
+        function gerarCodigos() {
+            const gerar = () => Math.random().toString(36).substring(2, 8).toUpperCase() +
+                              '-' + Math.random().toString(36).substring(2, 6).toUpperCase();
+           
+            codigosGerados.principal = gerar();
+            codigosGerados.acompanhante = gerar();
+           
+            document.getElementById('codigosContainer').innerHTML = `
+                <div class="codigo-single">
+                    <div class="codigo-nome"><i class="fas fa-user"></i> ${nomePrincipalInput.value || 'Convidado'}</div>
+                    <div class="codigo-numero">${codigosGerados.principal}</div>
+                </div>
+                <div class="codigo-single">
+                    <div class="codigo-nome"><i class="fas fa-user-friends"></i> ${nomeAcompanhanteInput.value || 'Acompanhante'}</div>
+                    <div class="codigo-numero">${codigosGerados.acompanhante}</div>
+                </div>
+            `;
+        }
+
+        function atualizarResumo() {
+            document.getElementById('resumoPrincipal').textContent = nomePrincipalInput.value || '-';
+            document.getElementById('resumoAcompanhante').textContent = nomeAcompanhanteInput.value || '-';
+            document.getElementById('resumoZona').textContent = zonaSelecionada || '-';
+           
+            let consumosHtml = '';
+            bebidasSelecionadas.forEach(item => {
+                consumosHtml += `
+                    <div class="resumo-linha">
+                        <span>${item.nome} (${item.quantidade}x)</span>
+                        <span>${item.referencia}</span>
+                    </div>
+                `;
+            });
+           
+            document.getElementById('resumoConsumos').innerHTML = consumosHtml || '<div class="resumo-linha">Nenhum consumo</div>';
+            document.getElementById('resumoPresente').textContent = valorPresente ? valorPresente.toLocaleString() + ' MT' : '-';
+            document.getElementById('resumoPagamento').textContent = meioPagamento || '-';
+        }
+
+        function exportarDados() {
+            const dados = {
+                convidado: nomePrincipalInput.value,
+                acompanhante: nomeAcompanhanteInput.value,
+                zona: zonaSelecionada,
+                consumos: bebidasSelecionadas,
+                presente: valorPresente,
+                pagamento: meioPagamento,
+                codigos: codigosGerados
+            };
+           
+            console.log('Dados exportados:', dados);
+            alert('Dados exportados! Verifique o console (F12)');
+        }
+
+        // ========== NAVEGAÇÃO ==========
+        function nextPage() {
+            if (currentPage === 1 && (!nomePrincipalInput.value || !nomeAcompanhanteInput.value)) {
+                alert('Preencha os nomes dos dois convidados!');
+                return;
+            }
+           
+            if (currentPage === 2) {
+                if (bebidasSelecionadas.length === 0) {
+                    alert('Selecionem pelo menos uma bebida!');
+                    return;
+                }
+                if (!zonaSelecionada) {
+                    alert('Escolham uma zona para ficarem!');
+                    return;
+                }
+            }
+           
+            if (currentPage < 4) {
+                currentPage++;
+                updatePage();
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                updatePage();
+            }
+        }
+
+        function updatePage() {
+            pages.forEach((p, i) => p.classList.toggle('active', i + 1 === currentPage));
+           
+            steps.forEach((s, i) => {
+                s.classList.remove('active', 'completed');
+                if (i + 1 === currentPage) s.classList.add('active');
+                else if (i + 1 < currentPage) s.classList.add('completed');
+            });
+        }
+
+        function reiniciar() {
+            if (confirm('Reiniciar convite?')) {
+                currentPage = 1;
+                bebidasSelecionadas = [];
+                zonaSelecionada = '';
+                valorPresente = 0;
+                meioPagamento = '';
+                updatePage();
+                atualizarListaItens();
+                location.reload();
+            }
+        }
+
+        // Inicializar
+        init();
+    </script>
+</body>
+</html>
